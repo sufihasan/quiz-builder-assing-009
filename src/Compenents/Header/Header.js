@@ -2,20 +2,27 @@ import React from 'react';
 import './Header.css'
 
 import { Link } from 'react-router-dom';
+import { Container, Nav, Navbar, NavLink } from 'react-bootstrap';
 
 const Header = () => {
     return (
+        <div>
 
-        <div className='d-flex justify-content-between  ps-3 p-2   bg-primary  '>
-            <div>
-                <h3>Quiz Builder</h3>
-            </div>
-            <nav >
-                <Link className='text-decoration-none hovers  align-middle me-3 fs-5 ' to='/'>Home</Link>
-                <Link className='text-decoration-none hovers align-middle me-3 fs-5' to='/topics'>Topics</Link>
-                <Link className='text-decoration-none hovers align-middle me-3 fs-5' to='/statistics'>Statistics</Link>
-                <Link className='hovers text-decoration-none   align-middle me-3 fs-5 ' to='/blog'>Blog</Link>
-            </nav>
+            <Navbar bg="primary" expand="lg">
+                <Container>
+                    <Navbar.Brand className='brand fs-3' as={Link} to='/'>Quiz Builder</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ms-auto">
+                            <Nav.Link className='list-item fs-5' as={Link} to='/'>Home</Nav.Link>
+                            <Nav.Link className='list-item fs-5' as={Link} to='/topics'>Topics</Nav.Link>
+                            <Nav.Link className='list-item fs-5' as={Link} to='/statistics'>Statistics</Nav.Link>
+                            <Nav.Link className='list-item fs-5' as={Link} to='/blog'>Blog</Nav.Link>
+
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
 
 
         </div>

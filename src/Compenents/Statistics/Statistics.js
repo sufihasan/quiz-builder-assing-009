@@ -15,7 +15,7 @@ const Statistics = () => {
                 <XAxis dataKey="name" />
                 <YAxis />
             </LineChart>
-        </div>
+        </div >
     );
 };
 

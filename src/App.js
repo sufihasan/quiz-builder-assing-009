@@ -4,6 +4,7 @@ import Blog from './Compenents/Blog/Blog';
 import Home from './Compenents/Home/Home';
 import Main from './Compenents/Main/Main';
 import Quizshow from './Compenents/Quizshow/Quizshow';
+import Shownotfound from './Compenents/Shownotfound/Shownotfound';
 import Statistics from './Compenents/Statistics/Statistics';
 import Topics from './Compenents/Topics/Topics';
 
@@ -45,6 +46,10 @@ function App() {
           element: <Quizshow></Quizshow>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <Shownotfound></Shownotfound>
     }
 
   ]);

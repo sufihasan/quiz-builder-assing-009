@@ -6,3 +6,20 @@
 .hovers {
     color: whitesmoke;
 }
+
+.brand {
+    color: whitesmoke !important;
+    /* font-size: 30px !important; */
+}
+
+.list-item {
+    color: whitesmoke !important;
+}
+
+.brand:hover {
+    color: black !important;
+}
+
+.list-item:hover {
+    color: black !important;
+}

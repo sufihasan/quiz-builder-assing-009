@@ -9,7 +9,7 @@ const Home = () => {
     const quizes = useLoaderData().data;
     console.log(quizes);
     return (
-        <div className='homeContainer'>
+        <div className='homeContainer container'>
 
             <div className="container px-4 text-center border border-2 border-info mt-3 rounded">
                 <div className="row gx-5">
@@ -50,6 +50,35 @@ const Home = () => {
 
 
             </div>
+
+
+            {/* new part  start*/}
+
+            <div className="row row-cols-1 row-cols-md-2 g-4 mt-4 ">
+
+
+                <div className="col">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-primary">Support</h5>
+                            <p className="card-text">Our world class support is rady for you.
+                                If you featch any problem.Our team is beside you. Thank You</p>
+                            <Button className='btn-primary'>Join Support</Button>
+                        </div>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-primary">Advanced</h5>
+                            <p className="card-text">If you complite all quize with 100 % mark
+                                you can get an advanced quiz course without no pay.</p>
+                            <Button className='btn-primary'>Start Advaned</Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* new part end */}
 
 
 

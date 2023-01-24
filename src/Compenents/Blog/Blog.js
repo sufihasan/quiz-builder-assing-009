@@ -22,8 +22,12 @@ const Blog = () => {
 
             </Card>
             <Card className='p-3 mb-4'>
-                <Card.Title>catr title</Card.Title>
-                <Card.Body>This is some text within a card body.</Card.Body>
+                <Card.Title>Write about useRef hook in react</Card.Title>
+                <Card.Body>Essentially, useRef is like a “box” that can hold a mutable value in its .
+                    current property. You might be familiar with refs primarily as a way to access
+                    the DOM. If you pass a ref object to React with
+                    React will set its .
+                    current property to the corresponding DOM node whenever that node changesg.</Card.Body>
 
             </Card>
         </div>

@@ -1,3 +1,5 @@
+import { faCoffee, faEye } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Form, } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
@@ -16,6 +18,13 @@ const ShowQuestion = ({ question }) => {
 
     }
     const customId = "custom-id-yes";
+    const correctNotify = (correctAnswer) => {
+        // toast(correctAnswer);
+        toast(correctAnswer, {
+            toastId: customId
+        });
+
+    }
 
     const notify = (val) => {
         if (val === 1) {
@@ -48,13 +57,18 @@ const ShowQuestion = ({ question }) => {
 
 
 
+
+
     return (
         <div>
             {/* <div className="Container" dangerouslySetInnerHTML={{ __html: ques }}></div> */}
             <div className="card w-75 mb-3">
                 <div className="card-body">
-                    <h5 className="card-title"><div className="Container" dangerouslySetInnerHTML={{ __html: ques }}></div></h5>
+                    <div className='d-flex align-items-center justify-content-between'>
+                        <h5 className="card-title"><div className="Container" dangerouslySetInnerHTML={{ __html: ques }}></div></h5>
+                        <FontAwesomeIcon onClick={() => correctNotify(correctAnswer)} className='ms-3' icon={faEye} />
 
+                    </div>
                     {/* radio part */}
                     <Form>
                         {options.map((option, idx) => (

@@ -20,8 +20,8 @@ const Home = () => {
                     <div className="col">
                         <div className="p-3">
                             <h3>Welcome to our quiz center</h3>
-                            <p>Try to best </p>
-                            <p>solve all </p>
+                            <p>We assign here 4 type of Quiz React,JavaScript,Css,Git</p>
+                            <p>If you solve all you can learn more abut React,JavaScript,Css,Git  </p>
                         </div>
                     </div>
                 </div>

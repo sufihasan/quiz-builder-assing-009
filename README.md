@@ -1,13 +1,13 @@
 ### I write here some thing about my projece
 project Name : quiz-builder-assing-09
-## live website link :
+## live website link : https://marvelous-horse-878bda.netlify.app/
 
 ## about project
-1. I make a responsive navbar
-2. Then I install that recoured in my project
-3. I make router in app js
-4.I make home , topics,statistics,blog
-5.I use here react bootstrap, bootstrap, react router and etc
+# 1. I make a responsive navbar
+# 2. Then I install that recoured in my project
+# 3. I make router in app js
+# 4.I make home , topics,statistics,blog
+# 5.I use here react bootstrap, bootstrap, react router and etc
 
 
 

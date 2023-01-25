@@ -10,7 +10,7 @@ const Blog = () => {
                 <Card.Body>The Router in React JS is primarily used to create Single Page Web Apps.
                     In the application, React Router is utilized to define various routes.
                     When a user enters a URL into your browser and the URL route equals one
-                    of several 'pathways' as in the router folder, the user is sent to that route.</Card.Body>
+                    of several 'pathways' as in the router folder,  the user is sent to that route.</Card.Body>
 
             </Card>
             <Card className='p-3 mb-4'>

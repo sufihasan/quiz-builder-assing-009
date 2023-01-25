@@ -4,7 +4,7 @@ import { CartesianGrid, Line, LineChart, ResponsiveContainer, XAxis, YAxis } fro
 
 const Statistics = () => {
     const quizes = useLoaderData().data;
-    console.log('ppp', quizes);
+    console.log('quizes', quizes);
     return (
         <div className='container mt-4'>
             <h2 className='text-primary'>Statistics</h2>
